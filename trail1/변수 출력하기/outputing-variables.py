@@ -1,2 +1,2 @@
 a, b = 3, "C"
-print(a, b, sep="...")
+print('{0}...{1}'.format(a, b))
