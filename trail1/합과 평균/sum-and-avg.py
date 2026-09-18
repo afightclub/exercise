@@ -1,5 +1,3 @@
 a, b = map(int, input().split())
 
-arr = [a, b]
-
-print(sum(arr), sum(arr)/len(arr))
+print("%d %.1f" %(a+b, (a+b)/2))
