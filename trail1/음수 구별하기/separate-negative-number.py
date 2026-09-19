@@ -1,6 +1,6 @@
 N = int(input())
 
-if N > 0:
-    print(N)
-else:
-    print(f'{N}\nminus')
+print(N)
+
+if N < 0:
+    print('minus')
