@@ -1,11 +1,10 @@
 a, b = map(int, input().split())
 
 if a < b:
-    c = 1
+    print(1, end = " ")
 else:
-    c = 0
+    print(0, end = " ")
 if a == b:
-    d = 1
+    print(1, end = " ")
 else:
-    d = 0
-print(c, d)
+    print(0, end = " ")
