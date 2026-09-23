@@ -10,11 +10,15 @@ a2 = int(a[1])
 b2 = int(b[1])
 c2 = int(c[1])
 
-if (a1 == b1 == "Y") and (a2 >= 37 and b2 >= 37):
-    print("E")
-elif (a1 == c1 == "Y") and (a2 >= 37 and c2 >= 37):
-    print("E")
-elif (c1 == b1 == "Y") and (c2 >= 37 and b2 >= 37):
-    print("E")
+if a1 == "Y" and a2 >= 37:
+    if (b1 == "Y" and b2 >= 37) or (c1 == "Y" and c2 >= 37):
+        print("E")
+    else:
+        print("N")
+elif b1 == "Y" and b2 >= 37:
+    if c1 == "Y" and c2 >= 37:
+        print("E")
+    else:
+        print("N")
 else:
     print("N")
