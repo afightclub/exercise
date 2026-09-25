@@ -1,6 +1,8 @@
 a, b = map(int, input().split())
 
+i = a
 
-while a <= b:
-    print(a, end = " ")
-    a += 2
+while i >= a and i <= b:
+    if i%2 ==0:
+        print(i, end = " ")
+    i += 2
