@@ -7,6 +7,4 @@ for i in range(a, b+1):
         sum += i
         len += 1
 
-avr = sum/len
-
-print('%d %.1f' %(sum, avr))
+print('%d %.1f' %(sum, sum/len))
