@@ -1,4 +1,3 @@
-arr = input().split()
+l = list(input().split())
 
-for i in range(9, -1, -1):
-    print(arr[i], end = "")
+print(*l[::-1], sep = "")
