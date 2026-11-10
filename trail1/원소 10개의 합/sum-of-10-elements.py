@@ -1,6 +1,3 @@
-arr = input().split()
-sum = 0
-for i in range(10):
-    sum += int(arr[i])
+arr = list(map(int, input().split()))
 
-print(sum)
+print(sum(arr))
