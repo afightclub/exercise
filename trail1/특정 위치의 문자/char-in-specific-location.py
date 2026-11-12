@@ -2,8 +2,8 @@ ipt = input()
 word = ['L', 'E', 'B', 'R', 'O', 'S']
 idx = -1
 
-for i in range(len(word)):
-    if word[i] == ipt:
+for i,char in enumerate(word):
+    if char == ipt:
         idx = i
 
 if idx == -1:
