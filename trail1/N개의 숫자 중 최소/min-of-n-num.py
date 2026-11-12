@@ -3,14 +3,12 @@ arr = list(map(int, input().split()))
 
 # Please write your code here.
 min = arr[0]
-cnt = 0
+cnt = 1
 
-for i in arr[1:]:
-    if i < min:
-        min = i
-
-for i in arr:
-    if min == i:
+for i in range(1, n):
+    if min > arr[i]:
+        min = arr[i]
+        cnt = 1
+    elif min == arr[i]:
         cnt += 1
-
 print(min, cnt)
