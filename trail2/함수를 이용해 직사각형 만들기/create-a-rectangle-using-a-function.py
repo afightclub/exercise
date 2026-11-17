@@ -2,8 +2,8 @@ n, m = map(int, input().split())
 
 # Please write your code here.
 
-def print_num1():
-    print("1" * m)
+def print_num1(n, m):
+    for _ in range(n):
+        print("1" * m)
 
-for _ in range(n):
-    print_num1()
+print_num1(n,m)
