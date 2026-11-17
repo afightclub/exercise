@@ -1,3 +1,2 @@
-arr = input()
-
-print(arr.replace(" ", "\n"))
+for i in input().split():
+    print(i)
